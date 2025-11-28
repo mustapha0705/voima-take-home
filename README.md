@@ -1,12 +1,11 @@
 # **Voima – Take-Home Backend Feature**
 
+## 🚰 **Habit Chosen: Hydration Tracking**
 ### **Hydration Habit Micro-Feature**
 
 People with Sickle Cell Disease rely heavily on hydration to avoid crisis episodes. Proper hydration helps reduce blood viscosity and prevents sickling. This micro-feature provides a simple, friendly way for users to record hydration and receive quick insights based on their recent entries.
 
 ---
-
-## 🚰 **Habit Chosen: Hydration Tracking**
 
 This feature allows users to:
 
