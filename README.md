@@ -92,7 +92,7 @@ npm install
 Add your MongoDB connection string:
 
 ```
-MONGODB_URI=mongodb+srv://<your-uri>
+MONGO_URI=mongodb+srv://<your-uri>
 ```
 
 ### **4. Start the development server**
