@@ -2,9 +2,13 @@ import Hydrate from "../models/hydrate.model.js";
 
 const createHydration = async (req, res) => {
   try {
+    if (!req.body.amount) {
+      return res.status(400).json({ message: "Must provide amount" });
+    }
+
     const { amount, reference } = req.body;
 
-    const entry = Hydrate.create({ amount, reference });
+    const entry = await Hydrate.create({ amount, reference });
 
     res.status(201).json({ message: "Hydration entry added", entry });
   } catch (error) {
@@ -25,7 +29,9 @@ const getInsight = async (req, res) => {
       });
     }
 
-    const average = entries.reduce((sum, currentEntry) => sum + currentEntry.amount, 0) / entries.length;
+    const average =
+      entries.reduce((sum, currentEntry) => sum + currentEntry.amount, 0) /
+      entries.length;
 
     let insight = "";
 
@@ -43,7 +49,7 @@ const getInsight = async (req, res) => {
 
     res.status(200).json({ average: Math.round(average), entries, insight });
   } catch (error) {
-    console.error('Error fetching entries', error)
+    console.error("Error fetching entries", error);
     res.status(500).json({ error: "Failed to generate insight" });
   }
 };
