@@ -2,14 +2,11 @@
 
 ### **Hydration Habit Micro-Feature**
 
-This tiny backend feature supports one of the most important self-preservation habits for people living with Sickle Cell Disease: **hydration**.
-Dehydration increases blood viscosity, which can trigger sickling and lead to painful crisis episodes. Even small, steady hydration habits make a meaningful difference — that’s why this feature focuses on helping users log hydration and receive simple, supportive insights.
+People with Sickle Cell Disease rely heavily on hydration to avoid crisis episodes. Proper hydration helps reduce blood viscosity and prevents sickling. This micro-feature provides a simple, friendly way for users to record hydration and receive quick insights based on their recent entries.
 
 ---
 
 ## 🚰 **Habit Chosen: Hydration Tracking**
-
-Hydration is one of the most clinically important and user-friendly habits to support in SCD management. It’s actionable, universal, and easy to log — making it perfect for a lightweight take-home feature.
 
 This feature allows users to:
 
